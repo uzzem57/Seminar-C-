@@ -1,10 +1,9 @@
-﻿// * "String"      -> "SSttrriinngg"
-// * "Hello World" -> "HHeelllloo  WWoorrlldd"
-// * "1234!_ "     -> "11223344!!__  "
+﻿string Correct(string text)
+  {
+    return text
+    .Replace("0", "O")
+    .Replace("1", "I")
+    .Replace("5", "S");
+  }
 
-string data = "1234!_ ";
-string newdata = string.Empty;
-for( int i=0; i<data.Length;i++){
-    newdata = newdata + data[i] + data[i];
-} 
-Console.WriteLine(newdata);
+Console.WriteLine(Correct("5EM1NAR"));
