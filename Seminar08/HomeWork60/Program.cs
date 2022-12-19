@@ -15,9 +15,12 @@ int[,,] CreateMatrix (int row, int col, int dep, int min, int max)
             for (int k = 0; k < matrix.GetLength(2); k++)
                 {
                     matrix[i,j,k] = rnd.Next(min, max + 1);
+                    
                 }
         }
     }
+
+
     return matrix;
 } 
  
